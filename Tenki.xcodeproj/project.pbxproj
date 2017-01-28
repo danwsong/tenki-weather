@@ -22,6 +22,10 @@
 		658CE0221CA979CB001EA9E7 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658CE0211CA979CB001EA9E7 /* GlanceController.swift */; };
 		658CE0241CA979CB001EA9E7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658CE0231CA979CB001EA9E7 /* ComplicationController.swift */; };
 		658CE0261CA979CB001EA9E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658CE0251CA979CB001EA9E7 /* Assets.xcassets */; };
+		658CE0361CA97AC5001EA9E7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658CE0351CA97AC5001EA9E7 /* CoreLocation.framework */; };
+		65ADE9191CAEC6C0002E8056 /* weathericons-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65ADE9181CAEC6C0002E8056 /* weathericons-regular-webfont.ttf */; };
+		65ADE91A1CAEC6C0002E8056 /* weathericons-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65ADE9181CAEC6C0002E8056 /* weathericons-regular-webfont.ttf */; };
+		65ADE91B1CAEC6C0002E8056 /* weathericons-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65ADE9181CAEC6C0002E8056 /* weathericons-regular-webfont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +91,8 @@
 		658CE0231CA979CB001EA9E7 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		658CE0251CA979CB001EA9E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		658CE0271CA979CB001EA9E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		658CE0351CA97AC5001EA9E7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		65ADE9181CAEC6C0002E8056 /* weathericons-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "weathericons-regular-webfont.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658CE0361CA97AC5001EA9E7 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +117,8 @@
 		658CDFEA1CA979CA001EA9E7 = {
 			isa = PBXGroup;
 			children = (
+				65ADE9181CAEC6C0002E8056 /* weathericons-regular-webfont.ttf */,
+				658CE0351CA97AC5001EA9E7 /* CoreLocation.framework */,
 				658CDFF51CA979CA001EA9E7 /* Tenki */,
 				658CE0091CA979CA001EA9E7 /* Tenki WatchKit App */,
 				658CE0181CA979CB001EA9E7 /* Tenki WatchKit Extension */,
@@ -236,17 +245,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Daniel Song";
 				TargetAttributes = {
 					658CDFF21CA979CA001EA9E7 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 					};
 					658CE0041CA979CA001EA9E7 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 					};
 					658CE0131CA979CB001EA9E7 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -277,6 +289,7 @@
 			files = (
 				658CE0011CA979CA001EA9E7 /* LaunchScreen.storyboard in Resources */,
 				658CDFFE1CA979CA001EA9E7 /* Assets.xcassets in Resources */,
+				65ADE9191CAEC6C0002E8056 /* weathericons-regular-webfont.ttf in Resources */,
 				658CDFFC1CA979CA001EA9E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +300,7 @@
 			files = (
 				658CE00E1CA979CA001EA9E7 /* Assets.xcassets in Resources */,
 				658CE00C1CA979CA001EA9E7 /* Interface.storyboard in Resources */,
+				65ADE91A1CAEC6C0002E8056 /* weathericons-regular-webfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65ADE91B1CAEC6C0002E8056 /* weathericons-regular-webfont.ttf in Resources */,
 				658CE0261CA979CB001EA9E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,8 +394,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -425,8 +442,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -445,6 +464,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -460,6 +480,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -475,6 +496,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -483,14 +505,15 @@
 		658CE02F1CA979CB001EA9E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Tenki_WatchKit_Extension;
 				INFOPLIST_FILE = "Tenki WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.servthedev.Tenki.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -499,14 +522,15 @@
 		658CE0301CA979CB001EA9E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Tenki_WatchKit_Extension;
 				INFOPLIST_FILE = "Tenki WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.servthedev.Tenki.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -520,6 +544,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.servthedev.Tenki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -531,6 +556,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.servthedev.Tenki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -553,6 +579,7 @@
 				658CE02C1CA979CB001EA9E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		658CE02E1CA979CB001EA9E7 /* Build configuration list for PBXNativeTarget "Tenki WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +588,7 @@
 				658CE0301CA979CB001EA9E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		658CE0321CA979CB001EA9E7 /* Build configuration list for PBXNativeTarget "Tenki" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +597,7 @@
 				658CE0341CA979CB001EA9E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
